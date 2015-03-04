@@ -1,0 +1,21 @@
+[
+{
+"modid": "LetsGetDrunk",
+"name": "Lets Get Drunk",
+"description": "A mod about making alcohol and getting drunk",
+"version": "0.1",
+"mcversion": "1.7.10",
+"url": "",
+"updateUrl": "",
+"authorList": [
+"LordDarkRift"
+],
+"credits": "To pahimar who taught me how to make mods.",
+"logoFile": "",
+"screenshots": [
+],
+"parent":"",
+"dependencies": [
+]
+}
+]
