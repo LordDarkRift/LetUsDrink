@@ -1,9 +1,10 @@
-package com.darkrift.letsgetdrunk;
+package com.darkrift.letusdrink;
 
-import com.darkrift.letsgetdrunk.handler.ConfigurationHandler;
-import com.darkrift.letsgetdrunk.proxy.IProxy;
-import com.darkrift.letsgetdrunk.reference.Reference;
-import com.darkrift.letsgetdrunk.utility.LogHelper;
+import com.darkrift.letusdrink.handler.ConfigurationHandler;
+import com.darkrift.letusdrink.init.ModItems;
+import com.darkrift.letusdrink.proxy.IProxy;
+import com.darkrift.letusdrink.reference.Reference;
+import com.darkrift.letusdrink.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -26,6 +27,7 @@ public class LetsGetDrunk
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        ModItems.init();
         LogHelper.info("Pre Initialization Complete");
     }
 

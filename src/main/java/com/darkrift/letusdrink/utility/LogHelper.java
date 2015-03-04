@@ -1,7 +1,7 @@
-package com.darkrift.letsgetdrunk.utility;
+package com.darkrift.letusdrink.utility;
 
 
-import com.darkrift.letsgetdrunk.reference.Reference;
+import com.darkrift.letusdrink.reference.Reference;
 import cpw.mods.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 

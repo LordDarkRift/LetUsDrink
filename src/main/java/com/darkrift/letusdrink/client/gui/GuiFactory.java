@@ -1,4 +1,4 @@
-package com.darkrift.letsgetdrunk.client.gui;
+package com.darkrift.letusdrink.client.gui;
 
 import cpw.mods.fml.client.IModGuiFactory;
 import net.minecraft.client.Minecraft;
