@@ -1,6 +1,7 @@
 package com.darkrift.letusdrink;
 
 import com.darkrift.letusdrink.handler.ConfigurationHandler;
+import com.darkrift.letusdrink.init.ModBlocks;
 import com.darkrift.letusdrink.init.ModItems;
 import com.darkrift.letusdrink.proxy.IProxy;
 import com.darkrift.letusdrink.reference.Reference;
@@ -14,10 +15,10 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
-public class LetsGetDrunk
+public class LetUsDrink
 {
     @Mod.Instance(Reference.MOD_ID)
-    public static LetsGetDrunk instance;
+    public static LetUsDrink instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
@@ -27,7 +28,8 @@ public class LetsGetDrunk
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-        ModItems.init();
+        ModItems.init(); //initializing items
+        ModBlocks.init(); //initializing blocks
         LogHelper.info("Pre Initialization Complete");
     }
 
