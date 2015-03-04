@@ -1,19 +1,22 @@
 package com.darkrift.letsgetdrunk;
 
+import com.darkrift.letsgetdrunk.proxy.IProxy;
+import com.darkrift.letsgetdrunk.reference.Reference;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-/**
- * Created by darkrift on 3/4/15.
- */
 
-@Mod(modid="LetsGetDrunk", name="Lets Get Drunk", version="1.7.10-0.1")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class LetsGetDrunk
 {
-    @Mod.Instance("LetsGetDrunk")
+    @Mod.Instance(Reference.MOD_ID)
     public static LetsGetDrunk instance;
+
+    @SidedProxy(clientSide = "com.darkrift.letsgetdrunk.proxy.ClientProxy", serverSide = "com.darkrift.letsgetdrunk.proxy.ServerProxy")
+    public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
