@@ -1,6 +1,8 @@
 package com.darkrift.letusdrink.item;
 
-public class ItemPint extends ItemLGD
+import com.darkrift.letusdrink.creativetab.CreativeTabLUD;
+
+public class ItemPint extends ItemLUD
 {
     public ItemPint()
     {

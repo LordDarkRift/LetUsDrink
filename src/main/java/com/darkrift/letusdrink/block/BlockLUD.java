@@ -1,5 +1,6 @@
 package com.darkrift.letusdrink.block;
 
+import com.darkrift.letusdrink.creativetab.CreativeTabLUD;
 import com.darkrift.letusdrink.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -7,16 +8,17 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
-public class BlockLGD extends Block
+public class BlockLUD extends Block
 {
-    public BlockLGD(Material material)
+    public BlockLUD(Material material)
     {
         super(material);
     }
 
-    public BlockLGD()
+    public BlockLUD()
     {
         this(Material.rock);
+        this.setCreativeTab(CreativeTabLUD.LUD_TAB);
     }
 
     @Override
