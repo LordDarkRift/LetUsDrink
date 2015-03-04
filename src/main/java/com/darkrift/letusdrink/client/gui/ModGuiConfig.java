@@ -1,7 +1,7 @@
-package com.darkrift.letsgetdrunk.client.gui;
+package com.darkrift.letusdrink.client.gui;
 
-import com.darkrift.letsgetdrunk.handler.ConfigurationHandler;
-import com.darkrift.letsgetdrunk.reference.Reference;
+import com.darkrift.letusdrink.handler.ConfigurationHandler;
+import com.darkrift.letusdrink.reference.Reference;
 import cpw.mods.fml.client.config.GuiConfig;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;

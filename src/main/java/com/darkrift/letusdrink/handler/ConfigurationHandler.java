@@ -1,6 +1,6 @@
-package com.darkrift.letsgetdrunk.handler;
+package com.darkrift.letusdrink.handler;
 
-import com.darkrift.letsgetdrunk.reference.Reference;
+import com.darkrift.letusdrink.reference.Reference;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;
